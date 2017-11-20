@@ -1,0 +1,12 @@
+{
+  "name": "node-caas-proxy",
+  "version": "1.0.0",
+  "description": "Adds apikey to caas requests",
+  "main": "main.js",
+  "dependencies": {
+    "http": "0.0.0",
+    "http-proxy": "^1.16.2"
+  },
+  "author": "Emre Izgöl",
+  "license": "ISC"
+}

@@ -1,0 +1,6 @@
+{
+	"caashost":"dummyhostname",
+	"caasport": 11111,
+	"apikey":"dummy-apikey",
+	"port": 11112
+}
