@@ -15,11 +15,12 @@ proxy.on('proxyReq', function(proxyReq, req, res, options) {
 	let prMethod = util.inspect(proxyReq.method, false, null).split("'").join("");
 	let prPath = util.inspect(proxyReq.path, false, null).split("'").join("");
 
-	console.info(prMethod + " " + caasurl + prPath);
+	if(prPath.includes("assets.files")){
+        proxyReq.setHeader('Authorization', 'apikey="' + config.apikey + '"');
+        console.info(prMethod + " " + caasurl + prPath);
 
-	proxyReq.setHeader('Authorization', 'apikey="' + config.apikey + '"');
-
-	console.info("Added apikey to headers");
+        console.info("Added apikey to headers");
+	}
 });
 proxy.on('error', function(err, req, res){
 	console.error(err);
