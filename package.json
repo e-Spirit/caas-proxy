@@ -5,7 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "http": "0.0.0",
-    "http-proxy": "^1.16.2"
+    "http-proxy": "^1.18.1"
   },
   "author": "Emre Izgöl",
   "license": "ISC"
